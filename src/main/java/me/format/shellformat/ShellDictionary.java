@@ -1,8 +1,9 @@
 package me.format.shellformat;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.google.common.collect.ImmutableMap;
 
 
 /**
@@ -31,9 +32,11 @@ public class ShellDictionary {
      * @return an immutable map
      */
     public Map<String, Object> toMap() {
+	/*use this chunk if you can't afford depending on guava
 	Map<String, Object> dictionary = new HashMap<String, Object>();
 	dictionary.putAll(this.dictionary);
-        return Collections.unmodifiableMap(dictionary);
+        return Collections.unmodifiableMap(dictionary);*/
+	return ImmutableMap.copyOf(dictionary);
     }
     
     
