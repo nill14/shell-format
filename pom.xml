@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.format</groupId>
 	<artifactId>java-shell-format</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -12,7 +12,7 @@
 
 	<scm>
 		<connection>scm:git:file:///C/dev/git/shell-format</connection>
-		<tag>r0.0</tag>
+		<tag>v0.0.2</tag>
 	</scm>
 
 	<build>
