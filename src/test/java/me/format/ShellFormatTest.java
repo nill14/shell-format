@@ -17,6 +17,17 @@ public class ShellFormatTest {
     }
 
     @Test
+    public void test1aNestedReplace() {
+	ShellFormat shellFormat = ShellFormat.dictionary(
+		"pom",		"World${exm}",
+		"exm", 		"!!!"
+		).compile();
+        
+        String result = shellFormat.format("Hello $pom");
+	assertEquals("Hello World!!!", result);
+    }
+    
+    @Test
     public void test2multiline() {
 	String multiline = ShellFormat.multiline(
 		"abc",
