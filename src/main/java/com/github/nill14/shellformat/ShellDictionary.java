@@ -1,4 +1,4 @@
-package me.format.shellformat;
+package com.github.nill14.shellformat;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,6 @@ import com.google.common.collect.ImmutableMap;
 
 
 /**
- * Published in terms of BSD or Apache2 license. <br/>
  *
  * ShellFormat supports variable replace. Variables are in form ${beer} or $milk.
  * Multiline formatting is preserved. Variable could expand into string with variables.
@@ -32,10 +31,11 @@ public class ShellDictionary {
      * @return an immutable map
      */
     public Map<String, Object> toMap() {
-	/*use this chunk if you can't afford depending on guava
-	Map<String, Object> dictionary = new HashMap<String, Object>();
-	dictionary.putAll(this.dictionary);
-        return Collections.unmodifiableMap(dictionary);*/
+	/*
+		Map<String, Object> dictionary = new HashMap<String, Object>();
+		dictionary.putAll(this.dictionary);
+        	return Collections.unmodifiableMap(dictionary);
+        */
 	return ImmutableMap.copyOf(dictionary);
     }
     

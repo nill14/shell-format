@@ -1,4 +1,4 @@
-package me.format.shellformat;
+package com.github.nill14.shellformat;
 
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * Published in terms of BSD or Apache2 license. <br/>
  *
  * ShellFormat supports variable replace. Variables are in form ${beer} or $milk.
  * Multiline formatting is preserved. Variable could expand into string with variables.
