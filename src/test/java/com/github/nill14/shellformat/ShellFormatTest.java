@@ -1,11 +1,13 @@
-package me.format;
+package com.github.nill14.shellformat;
 
 import static org.junit.Assert.*;
-import me.format.shellformat.ShellDictionary;
-import me.format.shellformat.ShellFormat;
 
 import org.junit.Test;
 
+import com.github.nill14.shellformat.ShellDictionary;
+import com.github.nill14.shellformat.ShellFormat;
+
+@SuppressWarnings("javadoc")
 public class ShellFormatTest {
 
     @Test
